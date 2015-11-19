@@ -1,3 +1,23 @@
+@font-face {
+  font-family: ikaros;
+  font-weight: 200;
+  src: url("/fonts/ikaros-light.otf") format("opentype");
+}
+@font-face {
+  font-family: ikaros;
+  font-weight: normal;
+  src: url("/fonts/ikaros-regular.otf") format("opentype");
+}
+@font-face {
+  font-family: arctic;
+  font-weight: normal;
+  src: url("/fonts/arctic.otf") format("opentype");
+}
+@font-face {
+  font-family: alcubierre;
+  font-weight: normal;
+  src: url("/fonts/alcubierre.otf") format("opentype");
+}
 *,
 *:before,
 *:after {
@@ -63,7 +83,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 body {
-  font-family: Verdana, sans-serif, sans-serif;
+  font-family: 'ikaros', Tahoma, sans-serif, sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 24px;
@@ -97,7 +117,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: Verdana, sans-serif, cursive;
+  font-family: 'arctic', Tahoma, sans-serif, cursive;
   margin: 0;
 }
 h1,
@@ -256,7 +276,7 @@ dl dd {
 }
 blockquote,
 .blockquote {
-  font-family: Verdana, sans-serif, cursive;
+  font-family: 'ikaros', Tahoma, sans-serif, cursive;
   font-weight: 300;
   color: #fff;
   font-style: italic;
@@ -1686,9 +1706,9 @@ img {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000, endColorstr=#66000000);
 }
 .logo {
-  width: 150px;
-  height: 30px;
-  background: url(img/logo.svg) 50% 50% no-repeat;
+  width: 254px;
+  height: 47px;
+  background: url(img/jairostudios-logo-white.png) 50% 50% no-repeat;
   display: inline-block;
   float: left;
   -webkit-transition: all 0.3s;
@@ -1780,11 +1800,11 @@ img {
   margin: 10px 0;
 }
 .navigation-menu .navigation-item > a {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 20px;
-  line-height: 1.25rem;
-  font-weight: 700;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  font-weight: 400;
   display: block;
   color: #fff;
   padding: 10px 0;
@@ -2070,7 +2090,7 @@ img {
   padding-top: 5px;
 }
 .team-profile-heading {
-  font-family: Verdana, sans-serif, cursive;
+  font-family: 'arctic', Tahoma, sans-serif, cursive;
   margin: 0;
   font-size: 16px;
   font-size: 1rem;
@@ -2530,8 +2550,8 @@ img {
     margin: 0 10px;
   }
   .navigation-menu .navigation-item > a {
-    font-size: 13px;
-    font-size: 0.8125rem;
+    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 16px;
     line-height: 1rem;
     color: #fff;
