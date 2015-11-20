@@ -55,6 +55,11 @@ gulp.task('movecss', function () {
     .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('movefonts', function () {
+  return gulp.src('./src/fonts/**/*')
+    .pipe(gulp.dest('./dist/fonts/'));
+});
+
 // Task to Minify JS
 gulp.task('jsmin', function() {
   return gulp.src('./src/js/**/*.js')
@@ -103,5 +108,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('movecss', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('movecss', 'imagemin', 'movefonts', 'jsmin', 'inlinesource');
 });
